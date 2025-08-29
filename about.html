@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(network.png);
+        }
+
+        body {
+            animation: slideDownPage 1s ease forwards;
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        .head {
+            background-color: #11daf5;
+            color: rgb(246, 243, 243);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        #icon1 {
+            color: rgb(248, 245, 245);
+            font-size: 30px;
+            margin-left: auto;
+            justify-content: center;
+        }
+
+        #icon1:hover {
+            background-color: white;
+            color: #11daf5;
+            border-radius: 10px;
+        }
+
+        .sum {
+            margin: 30px;
+            color: white;
+        }
+
+        #s2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        #s1 {
+            text-align: justify;
+            text-indent: 40px;
+            line-height: 1.6;
+            color: black;
+        }
+
+        .edu {
+            margin: 30px;
+            color: rgb(1, 1, 1);
+        }
+
+        .edu1 {
+            display: flex;
+            padding: 20px;
+            justify-content: space-evenly;
+        }
+
+        .edu2,
+        .edu5 {
+            border: 2px solid;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 20px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        .edu2:hover,
+        .edu5:hover {
+            background-color: cadetblue;
+            color: #11daf5;
+        }
+
+        .cont {
+            margin: 20px;
+        }
+
+        
+        .edu3,
+        .edu4 {
+            border: 2px solid;
+            border-radius: 20px;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            background: linear-gradient(to bottom,#11daf5,white,#11daf5 );
+
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transform: translateY(-20px);
+            transition: all 0.6s ease;
+        }
+
+        body:has(.edu2:hover) .edu3 {
+            opacity: 1;
+            max-height: 500px;
+            transform: translateY(0);
+        }
+
+        body:has(.edu5:hover) .edu4 {
+            opacity: 1;
+            max-height: 500px;
+            transform: translateY(0);
+        }
+
+        @keyframes slideDownPage {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .head {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .sum {
+                margin: 20px;
+            }
+
+            #s2 {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            #s1 {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .edu1 {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .edu2,
+            .edu5 {
+                width: 80%;
+                text-align: center;
+            }
+
+            .edu3,
+            .edu4 {
+                padding: 30px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .head {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #icon1 {
+                font-size: 24px;
+            }
+
+            #s2 {
+                font-size: 26px;
+            }
+
+            #s1 {
+                font-size: 16px;
+                text-align: justify;
+                text-indent: 20px;
+                line-height: 1.4;
+            }
+
+            .edu h1 {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .edu1 {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .edu2,
+            .edu5 {
+                width: 95%;
+                padding: 15px;
+                font-size: 18px;
+            }
+
+            .edu3,
+            .edu4 {
+                background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
+                padding: 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="head">
+            <h1>ABOUT US</h1>
+            <a href="index.html"><i class="fa-solid fa-house" id="icon1"></i></a>
+        </header>
+
+        <div class="sum">
+            <h1 id="s2">SUMMARY</h1>
+            <h2 id="s1">Enthusiastic Software Developer with strong expertise in Python and Django for backend
+                development, and proficiency in HTML, CSS, JavaScript, React.js, and Bootstrap for building responsive,
+                user-friendly frontends. Skilled in designing and managing databases with SQL, and experienced in
+                creating scalable full-stack web applications. Adept at problem-solving, writing clean and maintainable
+                code, and collaborating in agile team environments to deliver efficient and high-quality solutions.
+            </h2>
+        </div>
+
+        <div class="edu">
+            <h1>EDUCATION</h1>
+            <div class="edu1">
+                <div class="edu5">
+                    <h2>B.Sc Computer Science</h2>
+                </div>
+            </div>
+
+            <div class="cont">
+                <div class="edu3">
+                  
+                </div>
+
+                <div class="edu4">
+                    <h1>College Name: AGURCHAND MANNULL JAIN COLLEGE<br>
+                        Location: CHENNAI<br>
+                        CGPA: 7.39<BR>
+                        Academic year: 2022-2025
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

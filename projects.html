@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(network.png);
+      background-color: black;
+    }
+
+    .head {
+      background-color: #11daf5;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }
+
+    #icon1 {
+      color: white;
+      font-size: 28px;
+      margin-left: auto;
+      transition: 0.3s;
+    }
+
+    #icon1:hover {
+      color: #11daf5;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    #tag {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+
+    .card {
+      width: 90%;
+      max-width: 800px;
+      background: white;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: slideDown 0.8s ease forwards;
+    }
+
+
+    @keyframes slideDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+
+    .card h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card h4#pro2 {
+      text-decoration: underline;
+      font-size: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 15px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      #tag {
+        font-size: 24px;
+      }
+
+      .card {
+        width: 95%;
+      }
+
+      .card h2 {
+        font-size: 18px;
+      }
+
+      .card h3 {
+        font-size: 15px;
+      }
+
+      .card p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="head">
+      <h1>PROJECTS</h1>
+      <a href="index.html"> <i class="fa-solid fa-house" id="icon1"></i></a>
+    </header>
+
+    <h1 id="tag">PROJECTS</h1>
+
+    <section class="projects">
+
+      <div class="card">
+        <h2>Project - 1</h2>
+        <h3>CODE EDITOR<br>(HTML, CSS, JAVASCRIPT, REACT.JS)</h3>
+        <h4 id="pro2">ABSTRACT</h4>
+        <p>
+          The project “Web-Based Code Editor for Real-Time Programming” focuses on providing developers and learners
+          with an interactive environment to write, edit, and preview code instantly. Built using React.js, the editor
+          supports HTML, CSS, and JavaScript, allowing users to practice web development in a single platform. The
+          system enables syntax highlighting, structured layouts, and seamless switching between coding panels.
+          Real-time rendering ensures that changes in code are reflected immediately, enhancing the learning experience
+          and debugging efficiency. The editor is lightweight, user-friendly, and designed for accessibility across
+          devices. By combining simplicity with functionality, this project aims to serve as a practical tool for
+          students, educators, and developers to improve coding productivity.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <h2>Project - 2</h2>
+        <h3>NEWS APP <br>(HTML, CSS, REACT.JS)</h3>
+        <h4 id="pro2">ABSTRACT</h4>
+        <p>
+          The project “Personalized News Application” is designed to deliver real-time news updates from multiple
+          sources in a structured and user-friendly interface. Built with React.js and integrated with external news
+          APIs, the system fetches and categorizes articles into sections such as politics, sports, technology, and
+          entertainment. Users can search, filter, and bookmark news, ensuring personalized content delivery. The app
+          includes a responsive layout for smooth access across devices and provides dynamic updates without manual
+          refresh. Features like headline highlights, trending topics, and article previews enhance user engagement. By
+          combining simplicity, interactivity, and speed, this project aims to provide an efficient news reading
+          experience tailored to modern digital users
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(network.png);
+            background-color: #181717;
+           
+            animation: slideDownPage 1s ease forwards;
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        @keyframes slideDownPage {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .head {
+            background-color: #11daf5;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        #icon1 {
+            color: white;
+            font-size: 30px;
+            margin-left: auto;
+        }
+
+        #icon1:hover {
+            color: #11daf5;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        #con1 {
+            border: 2px solid;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            height: 700px;
+            min-width: 500px;
+            margin: 100px;
+            padding: 150px;
+            font-size: 30px;
+            background-color: white;
+        }
+
+        #con2 {
+            padding: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: #9ECAD6;
+            color: rgb(10, 10, 10);
+        }
+
+        #con3 {
+            padding: 30px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: #9ECAD6;
+        }
+
+        #con4 {
+            padding: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: #11daf5;
+        }
+
+        #icon2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 40px;
+            margin-top: 150px;
+        }
+
+        #icon2 a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            width: 200px;
+        }
+
+        #icon2 a:hover {
+            background-color: white;
+            color: red;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 5px 5px #11daf5;
+        }
+
+        #m1 {
+            color: #0A66C2;
+        }
+
+        #m2 {
+            color: #181717;
+        }
+
+        #m3 {
+            background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+            -webkit-text-fill-color: transpa rent; 
+        }
+
+        #m4 {
+            color: #EA4335;
+        }
+
+        @media (max-width: 768px) {
+            #contact {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #con1 {
+                min-width: 90%;
+                margin: 40px 0;
+                padding: 60px;
+                font-size: 22px;
+            }
+
+            #icon2 {
+                margin-top: 40px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #icon2 a {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .head {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #con1 {
+                min-width: 100%;
+                margin: 20px 0;
+                padding: 30px;
+                font-size: 18px;
+            }
+
+            #con2,
+            #con3 {
+                width: 100%;
+            }
+
+            #icon2 {
+                margin-top: 20px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            #icon2 a {
+                font-size: 18px;
+                padding: 8px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="head">
+            <h1>CONTACT</h1>
+            <a href="index.html"> <i class="fa-solid fa-house" id="icon1"></i></a>
+        </header>
+
+        <div id="contact">
+
+            <div id="con1">
+                <form>
+                    <label>Name</label>
+                    <input type="text" required placeholder="Enter your name" id="con2"><br><br>
+                    <label>Gmail</label>
+                    <input type="email" required placeholder="Enter your Gmail" id="con2"><br><br>
+                    <label>Message</label>
+                    <input type="text" required placeholder="Feel Free" id="con3"><br><br>
+                    <button id="con4">Submit</button>
+                </form>
+            </div>
+
+            <div id="icon2">
+                <h2 style="color: white;">Have a Question on your mind??</h2>
+                <h5 style="color: white;">Or just want to discuss a project? <br>Contact Me using any of the links!!</h5>
+                <a href="https://www.linkedin.com/in/prathap-k-1b2236284/">
+                    <i class="fa-brands fa-linkedin" id="m1"></i> LinkedIn
+                </a>
+                <a href="https://github.com/prathap-kathavarayan">
+                    <i class="fa-brands fa-square-github" id="m2"></i> Github
+                </a>
+                <a href="https://www.instagram.com/mr._.toxic._.devil/">
+                    <i class="fa-brands fa-square-instagram" id="m3"></i> Instagram
+                </a>
+                <a href="mailto:prathakv@gmail.com">
+                    <i class="fa-solid fa-envelope" id="m4"></i> Gmail
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

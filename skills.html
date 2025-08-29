@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(skill2.gif);
+      font-family: 'Times New Roman', Times, serif;
+
+      
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: slideDownPage 1s ease forwards;
+    }
+
+    @keyframes slideDownPage {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .head {
+      background-color: #11daf5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #icon1 {
+      font-size: 28px;
+      color: white;
+    }
+
+    #icon1:hover {
+      color: #11daf5;
+      background: white;
+      border-radius: 8px;
+    }
+
+    h1.tag {
+      margin: 100px;
+    }
+
+    .skill {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .skill-box {
+      background: white;
+      border: 2px solid black;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding: 20px;
+      width: 50vh;
+      font-size: 22px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .skill-box:hover {
+      background: #11daf5;
+      color: black;
+      box-shadow: 8px 8px rgba(92, 90, 90, 0.6);
+    }
+
+    .details {
+      display: none;
+      margin-top: 15px;
+      background: white;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .skill-box:hover .details {
+      display: block;
+    }
+    
+@media (max-width: 768px) {
+  .skill {
+    grid-template-columns: 1fr;  
+    padding: 50px;
+  }
+
+  .skill-box {
+    width: 100%;  
+    font-size: 20px;
+  }
+
+  h1.tag {
+    margin: 50px;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .head {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  h1.tag {
+    margin: 20px;
+    font-size: 22px;
+  }
+
+  .skill {
+    grid-template-columns: 1fr;  
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .skill-box {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+
+  #icon1 {
+    font-size: 24px;
+  }
+}
+    
+  </style>
+</head>
+
+<body>
+  <header class="head">
+    <h1>SKILLS</h1>
+    <a href="index.html"><i class="fa-solid fa-house" id="icon1"></i></a>
+  </header>
+
+  <h1 class="tag" style="color: white;">SKILLS</h1>
+
+  <div class="skill">
+    <div class="skill-box">
+      Front End
+      <div class="details">HTML, CSS, JavaScript, React.js, Bootstrap</div>
+    </div>
+
+    <div class="skill-box">
+      Back End
+      <div class="details">Python, Django</div>
+    </div>
+
+    <div class="skill-box">
+      Data Base
+      <div class="details">SQL Programming</div>
+    </div>
+
+    <div class="skill-box">
+      Tools
+      <div class="details">Git & Github, VS Code</div>
+    </div>
+
+    <div class="skill-box">
+      Productivity
+      <div class="details">MS Excel, MS Word, PowerPoint</div>
+    </div>
+
+    <div class="skill-box">
+      Soft Skills
+      <div class="details">Communication, Leadership, Teamwork, Decision Making</div>
+    </div>
+  </div>
+</body>
+
+</html>
